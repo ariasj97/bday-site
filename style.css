@@ -1,0 +1,283 @@
+/* Fonts & Basic Setup */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #fffaf5 0%, #ffd6d9 100%);
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+header h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3em;
+  color: #e26d91;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+
+section {
+  margin: 80px auto; /* adds space above & below every section */
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Timeline Section */
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.memory {
+  background: white;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.memory.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.memory img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Reasons Section */
+.reasons {
+  text-align: center;
+  padding: 50px 20px;
+  background: rgba(255,255,255,0.7);
+  border-top: 2px solid #f1b6c2;
+}
+
+.reasons h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.2em;
+  color: #e26d91;
+}
+
+.reasons ul {
+  list-style: none;
+  padding: 0;
+}
+
+.reasons li {
+  margin: 10px 0;
+  font-size: 1.1em;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.6s ease;
+}
+
+.countdown-box {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #d63384;
+  padding: 20px;
+}
+.card h2 {
+  text-align: center;
+}
+
+.memory p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: linear-gradient(45deg, #ff4f94, #ff92c9);
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 1.5;
+}
+
+/* Perfect Date Section */
+.perfect-date {
+  padding: 60px 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.75);
+  margin-top: 40px;
+  border-top: 2px solid #f3b6c5;
+}
+
+.perfect-date h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5em;
+  color: #e26d91;
+  margin-bottom: 10px;
+}
+
+.date-option {
+  margin: 20px auto;
+  max-width: 350px;
+  text-align: left;
+}
+
+.date-option label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.date-option select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ffc2d1;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+#generate-date {
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: #e26d91;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#generate-date:hover {
+  background: #d0557d;
+}
+
+#date-result {
+  margin-top: 30px;
+  font-size: 1.3em;
+  font-family: 'Dancing Script', cursive;
+  color: #d24e79;
+  padding: 10px 20px;
+}
+
+.gift-title {
+  text-align: center;
+  font-size: 1.9rem;
+  color: #e4669a;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.gift-message {
+  background: #ffeef5;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 1.18rem;
+  line-height: 1.6;
+  color: #91375e;
+  border: 1px solid #ffbad4;
+}
+
+/* Puzzle Section Styling */
+.puzzle-section {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 600px;
+}
+
+#puzzle-container {
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid #ff80b5;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(255, 100, 150, 0.3);
+}
+
+.puzzle-piece {
+  width: 100px;
+  height: 100px;
+  background-size: 300px 300px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+}
+
+#shuffle-btn {
+  background: #ff4d88;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+#shuffle-btn:hover {
+  background: #ff236a;
+}
+
+#puzzle-message {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #ff4d88;
+  font-weight: bold;
+}
+
+/* Puzzle Solved Glow */
+.solved-glow {
+  box-shadow: 0 0 25px #ff2e79, 0 0 50px #ff7ab8;
+  transition: 0.5s ease;
+}
+
+/* Confetti + hearts */
+.confetti-piece {
+  position: fixed;
+  top: -10px;
+  width: 12px;
+  height: 12px;
+  background: #ff4d88;
+  border-radius: 50%;
+  opacity: 0.9;
+  animation: fall 3s linear forwards;
+  pointer-events: none;
+}
+
+.confetti-piece:nth-child(even) {
+  background: #ff9ecd;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(50vh) rotate(180deg) scale(1.3);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg) scale(0.8);
+    opacity: 0;
+  }
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 60px 20px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5em;
+  color: #e26d91;
+}
